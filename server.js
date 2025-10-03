@@ -10,8 +10,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
-const serverIP = 'tiger.qbitnode.com ';
-const serverPort = 5005; // Your Java port
+const serverIP = 'play.royallsmp.fun';
+const serverPort = 5299; // Your Java port
 
 app.get('/api/server-status', async (req, res) => {
     try {
@@ -49,6 +49,7 @@ app.get(/.*/, (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
+
 
 
 
